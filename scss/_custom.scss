@@ -1,17 +1,16 @@
-$dk-green: #677E52;
-$lt-green: #B0CC99;
-$beige: #907879;
-$rose: #AFA0AA;
-$creme: #F2F2E3;
-$lt-blue: #2784E5;
-$blue-logo: #1E66B2; //text
-$chocolate: #211B1A;
-$dk-blue: #0B2540;
-$grey: #646361;
+$main-color: #1E7B82;
+$lt-main: #CEEBE8;
+
+$grey: #F2F2F2;
+$grey-text: #2B2B2B;
+$font-main: 'Open Sans', sans-serif;
+$font-titles: 'Montserrat', sans-serif;
+$button-color: #3A87E0;
+
 
 
 a {
-    color: $blue-logo;
+    color: $main-color;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
@@ -20,62 +19,65 @@ a {
 a:hover,
 a:focus {
     text-decoration: none;
-    color: $lt-blue;
+    color: $main-color;
 }
 
 
 body {
     width: 100%;
     height: 100%;
-    font-family: 'Lato', sans-serif;
-    color: $grey;
+    font-family: $font-main;
+    font-weight: 300;
+    color: black;
     background-color: white;
+    font-size: 18px;
     margin: 0 0 23px 0;
 }
 
-h1 {
-    font-weight: 300;
-    line-height: 1.2em;
-    font-size:  46px;
-    text-shadow: 1px 1px 0px $grey;
-}
-
-h2 {
-    font-family: 'Grand Hotel', cursive;
-    font-weight: thin;
-    font-size: 40px;
-    line-height: 1.2em;
-    text-shadow: 1px 1px 0px $creme;
-}
-
-
 p {
     font-size: 18px;
-    line-height: 23px;
+    line-height: 24px;
 
 }
 
+h1 {
+    font-family: $font-titles;
+    line-height: 1.2em;
+    font-size:  75px;
+    font-weight: bold;
+}
 
 h2 {
-    color: $lt-blue;
+    font-family: $font-main;
+    font-weight: thin;
+    font-size: 24px;
+    line-height: 45px;
 }
 
 h3 {
-    font-size: 26px;
-    color: $grey;
-    font-weight: 500px;
+    font-family: $font-titles;
+    letter-spacing: 1px;
+    line-height: 45px;
+    text-align: center;
 }
 
-h4 {
+ h4 {
+    font-weight: 300;
+    font-size: 27px;
+    line-height: 37px;
+    color: $main-color;
+ }
+
+ h5 {
     color: $grey;
     font-size: 8px;
 }
 
-
+.btTxt,
 .btn {
     border-radius: 0;
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Montserrat,sans-serif;
     font-weight: 400;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
@@ -83,17 +85,24 @@ h4 {
 }
 
 .btn-default {
-    border: 1px solid $blue-logo;
-    color: $lt-blue;
-    background-color: transparent;
+    border: 1px solid $grey;
+    color: white;
+    background-color: $button-color;
 }
 
 .btn-default:hover,
 .btn-default:focus {
-    border: 1px solid $blue-logo;
+    border: 1px solid $button-color;
     outline: 0;
-    color: #000;
-    background-color: $blue-logo;
+    color: white;
+    background-color: $lt-main;
+}
+
+.btn-circle:hover,
+.btn-circle:focus {
+    outline: 0;
+    color: #fff;
+    background: rgba(255,255,255,.1);
 }
 
 .btn-circle {
@@ -109,13 +118,6 @@ h4 {
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;
-}
-
-.btn-circle:hover,
-.btn-circle:focus {
-    outline: 0;
-    color: #fff;
-    background: rgba(255,255,255,.1);
 }
 
 .btn-circle i.animated {
@@ -143,7 +145,7 @@ h4 {
     border-bottom: 1px solid rgba(255,255,255,.3);
     text-transform: uppercase;
     font-family: Lato;
-    background-color: transparent;
+    background-color: $main-color;
 }
 
 .navbar-custom .navbar-brand {
@@ -192,7 +194,7 @@ h4 {
 }
 
 .navbar-custom .nav li.active a {
-    background-color: $lt-blue;
+    background-color: $main-color;
 }
 
 .navbar-custom .nav li.active a:hover {
@@ -213,69 +215,46 @@ h4 {
     .navbar-custom.top-nav-collapse {
         padding: 0;
         border-bottom: 1px solid rgba(255,255,255,.3);
-        background: $blue-logo;
-    }
-}
-
-@media(min-width:768px) {
-    .intro {
-        // height: 100%;
-        padding: 0;
-    }
-
-    .intro .intro-body .brand-heading {
-        font-size: 83px;
-    }
-
-    .intro .intro-body .intro-text {
-        font-size: 26px;
+        background: $main-color;
     }
 }
 
  // ABOUT SECTION //
 
-#about {
-    height: 800px;
+.about-section {
+    background-color: $grey;
+    width: 100%;
 }
 
-.intro {
-    display: table;
+.spotlight {
+    background-color: white;
+    margin: 40px;
+    padding: 40px;
+}
+
+.intro-body {
     width: 100%;
     padding: 100px 0;
     text-align: center;
     color: white;
-    background: url(../img/wig-blurr.jpg) no-repeat bottom center scroll;
+    background: url(../img/header-photo.png) no-repeat bottom center scroll;
     background-color: white;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    height: 700px;
 }
 
-blockquote {
-  background: #f9f9f9;
-  width: 500px;
-  margin: 0px auto;
-  border-left: 10px solid $blue-logo;
-  margin: 1.5em 10px;
-  padding: 0.5em 10px;
-  quotes: "\201C""\201D""\2018""\2019";
-  display: block;
-  margin: auto;
-  margin-top: 30px;
-}
-blockquote:before {
-  color: $grey;
-  content: open-quote;
-  font-size: 4em;
-  line-height: 0.1em;
-  margin-right: 0.25em;
-  vertical-align: -0.4em;
-}
-
-.mission {
-    margin-top: 100px;
+.intro-body::after {
+    content: "";
+    background: url(image.jpg);
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
 }
 
 #subscribe {
@@ -284,19 +263,20 @@ blockquote:before {
     margin: 0px auto;
 }
 
-
- // EVENTS SECTION //
-
-#events {
-    height: 800px;
+.transparent-box {
+    opacity: 0.45;
+    background: #1E7B82;
+    margin-top: 300px;
+    width: 100%;
+    padding: 40px 40px 100px 40px;
 }
+
 
 .events-section {
     width: 100%;
     padding: 50px 0;
-    color: $grey;
-    background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
-    background-color: white;
+    // background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
+    background-color: $lt-main;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -304,49 +284,139 @@ blockquote:before {
 }
 
 
-
-.intro-body form.form-inline {
-    padding-top: 150px;
-}
-
-
  // SPEAKER SECTION //
 
 
-@media(min-width:768px) {
-#speakers {
-    padding-top: 200px;
-    height: 800px;
-}
-}
 .speaker {
     text-align: center;
     padding-top: 30px;
-    color: white;
 }
 
+.icons img,
 .speaker img {
     margin: 0 auto;
-    border: 3px solid $blue-logo;
     max-height: 150px;
     max-width: 150px;
 }
 
 
+
+
  // CONTACT SECTION //
 
 
+.team-section {
+    background-color: $lt-main;
+    width: 100%;
+    p {
+        padding-top: 20px;
+    }
+    img {
+        margin: 0 auto;
+    }
+}
+
 #contact {
     padding-top: 0px;
+    background-color: $main-color;
+    width: 100%;
+    padding-top: 30px;
 
 }
 
-#contact.img {
-    width: 800px;
-    height: auto;
-    top: 10px;
+// #contact.img {
+//     width: 800px;
+//     height: auto;
+//     top: 10px;
+// }
+
+.get-in-touch {
+    margin-top: 30px;
+    h3 {
+        color: white;
+    }
 }
 
-.go-down {
-    margin-top: 250px;
+.icons {
+    background-color: $main-color;
+    color: white;
+    height: 300px;
+    margin: 0px auto;
+    p {
+        text-align: center;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+.icon img {
+    margin: 0 auto;
+    max-height: 65px;
+    max-width: 65px;
+}
+
+.icons {
+    padding-top: 80px;
+}
+#mc_embed_signup {
+    display: inline-table;
+    margin-bottom: 20px;
+}
+
+
+
+.email {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.date {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.team-detail {
+    margin: 0 auto;
+}
+
+.quote-name {
+    float: right;
+}
+
+.testimonial {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 0px;
+    padding: 10px 25px;
+    background-color: $grey;
+    padding-bottom: 40px;
+}
+
+.table-responsive {
+    display: table;
+    margin: 0px auto;
+    border:none;
+}
+
+.img {
+    display: table-cell;
+    vertical-align: middle;
+    width: 150px;
+}
+
+.testimonial-container {
+    width: 600;
+    margin: 0px auto;
+    text-align: center;
+}
+
+cite {
+    font-size: 14px;
+    float: right;
+}
+
+.contact-icons {
+    margin-top: 0px;
+    margin-bottom: 30px;
 }
