@@ -109,6 +109,9 @@ h5 {
   -webkit-animation-timing-function: linear;
   -moz-animation-timing-function: linear; }
 
+.navbar-brand img {
+  height: 25px; }
+
 .navbar-custom {
   margin-bottom: 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
@@ -153,7 +156,8 @@ h5 {
   outline: 0; }
 
 .navbar-custom .nav li.active a {
-  background-color: #1E7B82; }
+  background-color: #CEEBE8;
+  opacity: .8; }
 
 .navbar-custom .nav li.active a:hover {
   color: white; }
@@ -193,6 +197,11 @@ h5 {
   background-size: cover;
   -o-background-size: cover; }
 
+.intro-body img {
+  height: 100px;
+  float: left;
+  padding-left: 40px; }
+
 .intro-body::after {
   content: "";
   background: url(image.jpg);
@@ -210,7 +219,7 @@ h5 {
   margin: 0px auto; }
 
 .transparent-box {
-  opacity: 0.45;
+  opacity: 0.4;
   background: #1E7B82;
   margin-top: 300px;
   width: 100%;
@@ -227,13 +236,19 @@ h5 {
 
 .speaker {
   text-align: center;
-  padding-top: 30px; }
+  padding-top: 30px;
+  margin-bottom: 30px; }
 
 .icons img,
 .speaker img {
   margin: 0 auto;
-  max-height: 150px;
-  max-width: 150px; }
+  height: 150px;
+  width: 150px; }
+
+.speaker-logo.speaker-logo {
+  margin: 0 auto;
+  height: 50px;
+  width: 50px; }
 
 .team-section {
   background-color: #CEEBE8;

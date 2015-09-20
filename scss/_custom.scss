@@ -1,4 +1,5 @@
 $main-color: #1E7B82;
+$logo-color: #60AD8A;
 $lt-main: #CEEBE8;
 
 $grey: #F2F2F2;
@@ -138,7 +139,9 @@ h3 {
     -moz-animation-timing-function: linear;
 }
 
-
+.navbar-brand img {
+    height: 25px;
+}
 
 .navbar-custom {
     margin-bottom: 0;
@@ -146,6 +149,7 @@ h3 {
     text-transform: uppercase;
     font-family: Lato;
     background-color: $main-color;
+
 }
 
 .navbar-custom .navbar-brand {
@@ -194,7 +198,8 @@ h3 {
 }
 
 .navbar-custom .nav li.active a {
-    background-color: $main-color;
+    background-color: $lt-main;
+    opacity: .8;
 }
 
 .navbar-custom .nav li.active a:hover {
@@ -245,6 +250,12 @@ h3 {
     -o-background-size: cover;
 }
 
+.intro-body img {
+    height: 100px;
+    float: left;
+    padding-left: 40px;
+}
+
 .intro-body::after {
     content: "";
     background: url(image.jpg);
@@ -264,7 +275,7 @@ h3 {
 }
 
 .transparent-box {
-    opacity: 0.45;
+    opacity: 0.4;
     background: #1E7B82;
     margin-top: 300px;
     width: 100%;
@@ -290,16 +301,21 @@ h3 {
 .speaker {
     text-align: center;
     padding-top: 30px;
+    margin-bottom: 30px;
 }
 
 .icons img,
 .speaker img {
     margin: 0 auto;
-    max-height: 150px;
-    max-width: 150px;
+    height: 150px;
+    width: 150px;
 }
 
-
+.speaker-logo.speaker-logo {
+    margin: 0 auto;
+    height: 50px;
+    width: 50px;
+}
 
 
  // CONTACT SECTION //
