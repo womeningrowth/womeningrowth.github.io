@@ -236,16 +236,17 @@ h3 {
 }
 
 .intro-body {
+
+    background: url(../img/header-photo.png) no-repeat bottom center scroll;
+    background-color: white;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
     width: 100%;
     padding: 100px 0;
     text-align: center;
     color: white;
-    background: url(../img/header-photo.png) no-repeat bottom center scroll;
-    background-color: white;
-    -webkit-background-size: contain;
-    -moz-background-size: contain;
-    background-size: contain;
-    -o-background-size: contain;
 }
 
 .intro-body img {
