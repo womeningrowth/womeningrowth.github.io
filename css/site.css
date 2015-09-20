@@ -55,7 +55,7 @@ h5 {
 .btn {
   border-radius: 0;
   text-transform: uppercase;
-  font-family: Montserrat,sans-serif;
+  font-family: "Montserrat", sans-serif, sans-serif;
   font-weight: 400;
   -webkit-transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
@@ -109,15 +109,12 @@ h5 {
   -webkit-animation-timing-function: linear;
   -moz-animation-timing-function: linear; }
 
-.navbar-brand img {
-  height: 25px; }
-
 .navbar-custom {
   margin-bottom: 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  text-transform: uppercase;
-  font-family: Lato;
-  background-color: #1E7B82; }
+  font-family: "Montserrat", sans-serif;
+  background-color: #1E7B82;
+  letter-spacing: 1px; }
 
 .navbar-custom .navbar-brand {
   font-weight: 700; }
@@ -192,26 +189,14 @@ h5 {
   color: white;
   background: url(../img/header-photo.png) no-repeat bottom center scroll;
   background-color: white;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover; }
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
+  -o-background-size: contain; }
 
 .intro-body img {
-  height: 100px;
   float: left;
   padding-left: 40px; }
-
-.intro-body::after {
-  content: "";
-  background: url(image.jpg);
-  opacity: 0.5;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1; }
 
 #subscribe {
   width: 400;
@@ -336,5 +321,13 @@ cite {
 .contact-icons {
   margin-top: 0px;
   margin-bottom: 30px; }
+
+.mobile-title {
+  color: #1E7B82;
+  margin-left: 20px; }
+
+.mobile-addon {
+  background-color: #1E7B82;
+  margin-top: 60px; }
 
 /*# sourceMappingURL=site.css.map */
