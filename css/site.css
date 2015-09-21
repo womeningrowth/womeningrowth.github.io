@@ -182,6 +182,10 @@ h5 {
   margin: 40px;
   padding: 40px; }
 
+@media (max-width: 480px) {
+  .spotlight {
+    margin: 0px;
+    padding: 0px; } }
 .intro-body {
   background: url(../img/header-photo.png) no-repeat bottom center scroll;
   background-color: white;
@@ -329,5 +333,8 @@ cite {
 .mobile-addon {
   background-color: #1E7B82;
   margin-top: 60px; }
+
+.mobile-subscribe {
+  background-color: red; }
 
 /*# sourceMappingURL=site.css.map */

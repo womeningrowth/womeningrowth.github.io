@@ -235,6 +235,13 @@ h3 {
     padding: 40px;
 }
 
+@media(max-width:480px) {
+    .spotlight {
+    margin: 0px;
+    padding: 0px;
+}
+}
+
 .intro-body {
 
     background: url(../img/header-photo.png) no-repeat bottom center scroll;
@@ -443,4 +450,8 @@ cite {
 .mobile-addon {
     background-color: $main-color;
     margin-top: 60px;
+}
+
+.mobile-subscribe {
+    background-color: red;
 }
