@@ -154,10 +154,12 @@ h5 {
 
 .navbar-custom .nav li.active a {
   background-color: #CEEBE8;
-  opacity: .8; }
+  opacity: .8;
+  border-radius: 5px;
+  color: #333; }
 
 .navbar-custom .nav li.active a:hover {
-  color: white; }
+  color: #333; }
 
 @media (min-width: 768px) {
   .navbar-custom {
