@@ -174,9 +174,9 @@ h3 {
 }
 
 .navbar-custom .nav li a {
-    -webkit-transition: background .3s ease-in-out;
-    -moz-transition: background .3s ease-in-out;
-    transition: background .3s ease-in-out;
+    -webkit-transition: background .5s ease-in-out;
+    -moz-transition: background .5s ease-in-out;
+    transition: background .5s ease-in-out;
 }
 
 .navbar-custom .nav li a:hover {
@@ -224,6 +224,21 @@ h3 {
     }
 }
 
+.navbar-fixed-top {
+    z-index: -1;
+}
+
+.top-nav-collapse {
+    z-index: 1;
+}
+
+@media(max-width: 768px) {
+    .top-nav-collapse,
+    .navbar-fixed-top {
+        z-index: 1;
+    }
+}
+
  // ABOUT SECTION //
 
 .about-section {
@@ -244,37 +259,31 @@ h3 {
 }
 }
 
-.intro-body {
+.intro {
+    background-color: $lt-main;
+}
 
-    background: url(../img/header-photo.png) no-repeat bottom center scroll;
-    background-color: white;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+.intro-body {
+    position: relative;
+    max-width: 980px;
+    background: url(../img/header3.jpg) no-repeat top center scroll;
+    background-size: 980px 600px;
     width: 100%;
-    padding: 100px 0;
+    padding: 50px 0;
     text-align: center;
     color: white;
+    margin: 0 auto;
+    height: 600px;
 }
 
 .intro-body img {
-
     float: left;
     padding-left: 40px;
 }
+.logo-container {
+    margin-bottom: 163px;
+}
 
-// .intro-body::after {
-//     content: "";
-//     background: url(image.jpg);
-//     opacity: 0.5;
-//     top: 0;
-//     left: 0;
-//     bottom: 0;
-//     right: 0;
-//     position: absolute;
-//     z-index: -1;
-// }
 
 #subscribe {
     width: 400;
@@ -283,11 +292,14 @@ h3 {
 }
 
 .transparent-box {
-    opacity: 0.4;
+    opacity: 0.8;
     background: #1E7B82;
-    margin-top: 300px;
+    // margin-top: 300px;
     width: 100%;
-    padding: 40px 40px 100px 40px;
+    // padding: 40px 40px 100px 40px;
+    // position: absolute;
+    // bottom: 0;
+    // left: 0;
 }
 
 
@@ -301,7 +313,12 @@ h3 {
     background-size: cover;
     -o-background-size: cover;
 }
-
+.page-scroll-circle {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -60px / 2;
+}
 
  // SPEAKER SECTION //
 
@@ -382,12 +399,11 @@ h3 {
 .icons {
     padding-top: 80px;
 }
+
 #mc_embed_signup {
     display: inline-table;
     margin-bottom: 20px;
 }
-
-
 
 .email {
     margin-top: 20px;
@@ -404,6 +420,7 @@ h3 {
     margin: 0 auto;
 }
 
+// TESTIMONIAL //
 .quote-name {
     float: right;
 }
@@ -423,6 +440,10 @@ h3 {
     border:none;
 }
 
+.table-responsive img {
+    width: 100px;
+}
+
 .img {
     display: table-cell;
     vertical-align: middle;
@@ -440,24 +461,25 @@ cite {
     float: right;
 }
 
+// SOCIAL MEDIA
 .contact-icons {
     margin-top: 0px;
     margin-bottom: 30px;
+    color: white;
 }
 
-.mobile-title {
-    color: $main-color;
-    margin-left: 20px;
-}
-.mobile-addon {
-    background-color: $main-color;
-    margin-top: 60px;
-}
+
+// CHANGES TO MOBILE VIEW //
 
 .mobile-subscribe {
     background-color: white;
 }
 
-.contact-icons {
-    color: white;
+.logo-mobile {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+    margin-top: 60px;
 }
+
+
