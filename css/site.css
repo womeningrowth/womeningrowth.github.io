@@ -269,6 +269,10 @@ h5 {
 .logo-container {
   margin-bottom: 163px; }
 
+.logo-container img {
+  width: 100px;
+  margin-bottom: 100px; }
+
 #subscribe {
   width: 400;
   text-align: center;
