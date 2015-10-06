@@ -6,7 +6,7 @@ $grey: #F2F2F2;
 $grey-text: #2B2B2B;
 $font-main: 'Open Sans', sans-serif;
 $font-titles: 'Montserrat', sans-serif;
-$button-color: #3A87E0;
+$button-color-contrast: #FEAF20;
 
 
 html {
@@ -153,6 +153,7 @@ h3 {
 }
 
 
+
 .btn3d {
     position:relative;
     top: -6px;
@@ -162,7 +163,8 @@ h3 {
     margin-bottom:10px;
     margin-left:2px;
     margin-right:2px;
-    font-weight: bold;
+    border-radius: 0px;
+    // font-weight: bold;
 
 }
 
@@ -181,58 +183,37 @@ h3 {
     top:2px;
 }
 
-.btn3d.btn-white {
-    color: #666666;
-    box-shadow:0 0 0 1px #ebebeb inset, 0 0 0 2px rgba(255,255,255,0.10) inset, 0 8px 0 0 #f5f5f5, 0 8px 8px 1px rgba(0,0,0,.2);
-    background-color:#fff;
-}
 
-.btn3d.btn-white:active, .btn3d.btn-white.active {
-    color: #666666;
-    box-shadow:0 0 0 1px #ebebeb inset, 0 0 0 1px rgba(255,255,255,0.15) inset, 0 1px 3px 1px rgba(0,0,0,.1);
-    background-color:#fff;
-}
 
 .btn3d.btn-default {
     color: #666666;
-    box-shadow:0 0 0 1px #ebebeb inset, 0 0 0 2px rgba(255,255,255,0.10) inset, 0 8px 0 0 #BEBEBE, 0 8px 8px 1px rgba(0,0,0,.2);
-    background-color:#e2f7f8;
+    box-shadow:0 0 0 1px #ebebeb inset, 0 0 0 2px rgba(255,255,255,0.10) inset, 0 1px 0 0 #BEBEBE, 0 4px 4px 1px rgba(0,0,0,.2);
+    background-color: lighten($main-color, 60%);
 }
 
 .btn3d.btn-default:active, .btn3d.btn-default.active {
     color: #666666;
     box-shadow:0 0 0 1px #ebebeb inset, 0 0 0 1px rgba(255,255,255,0.15) inset, 0 1px 3px 1px rgba(0,0,0,.1);
-    background-color:#e2f7f8;
+    background-color:lighten($main-color, 60%);
 }
 
 .btn3d.btn-primary {
-    box-shadow:0 0 0 1px #ebebeb inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 8px 0 0 #BEBEBE, 0 8px 8px 1px rgba(0,0,0,0.5);
-    background-color:#FEAF20;
+    box-shadow:0 0 0 0px #ebebeb inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 1px 0 0 #BEBEBE, 0 2px 2px 1px rgba(0,0,0,0.5);
+    background-color: $button-color-contrast
 }
 
 .btn3d.btn-primary:active, .btn3d.btn-primary.active {
-    box-shadow:0 0 0 1px #ebebeb inset, 0 0 0 1px rgba(255,255,255,0.15) inset, 0 1px 3px 1px rgba(0,0,0,0.3);
-    background-color:#FEAF20;
-}
-
-.btn3d.btn-info {
-    box-shadow:0 0 0 1px #ebebeb inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 8px 0 0 #bebebe, 0 8px 8px 1px rgba(0,0,0,0.5);
-    background-color: $main-color;
-}
-
-.btn3d.btn-info:active, .btn3d.btn-info.active {
-    box-shadow:0 0 0 1px #ebebeb inset, 0 0 0 1px rgba(255,255,255,0.15) inset, 0 1px 3px 1px rgba(0,0,0,0.3);
-    background-color: #main-color;
+    box-shadow:0 0 0 0px #ebebeb inset, 0 0 0 1px rgba(255,255,255,0.15) inset, 0 1px 3px 1px rgba(0,0,0,0.3);
+    background-color: $button-color-contrast;
 }
 
 .navbar-custom {
   margin-bottom: 0;
   border-bottom: 1px solid rgba(255,255,255,.3);
-  // text-transform: uppercase;
-  font-family: $font-titles;
+  text-transform: uppercase;
   background-color: $main-color;
   letter-spacing: 1px;
-
+  font-weight: thin;
 }
 
 .navbar-custom .navbar-brand {
@@ -283,7 +264,7 @@ h3 {
 .navbar-custom .nav li.active a {
     background-color: $lt-main;
     opacity: .8;
-    border-radius: 5px;
+    // border-radius: 5px;
     color: #333;
 }
 
@@ -350,31 +331,28 @@ h3 {
 
 .intro-body {
     position: relative;
-    max-width: 980px;
     background: url(../img/header6.jpg) no-repeat top center scroll;
-    // -webkit-background-size: cover;
-    // -moz-background-size: cover;
-    // -o-background-size: cover;
-    background-size: 980px 600px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     width: 100%;
     padding: 50px 0;
     text-align: center;
     color: white;
     margin: 0 auto;
-    height: 600px;
+    height: 100%;
 }
 
 .intro-body img {
     float: left;
     padding-left: 40px;
 }
-.logo-container {
+.logo-box {
     margin-bottom: 163px;
-}
-
-.logo-container img {
-  width: 100px;
-  margin-bottom: 100px;
+    img {
+      width: 100px;
+      margin-bottom: 100px;
+    }
 }
 
 #subscribe {
@@ -384,32 +362,26 @@ h3 {
 }
 
 .transparent-box {
-    opacity: 0.8;
-    background: #1E7B82;
-    // margin-top: 300px;
-    width: 100%;
-    // padding: 40px 40px 100px 40px;
-    // position: absolute;
-    // bottom: 0;
-    // left: 0;
+    background-color: rgba(30, 123, 130, 0.45);
 }
 
-
-.events-section {
+#events {
     width: 100%;
     padding: 50px 0;
-    // background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
     background-color: $lt-main;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    text-align: center;
 }
+
 .page-scroll-circle {
     bottom: 10px;
     left: 50%;
     margin-left: -60px / 2;
 }
+
 
  // SPEAKER SECTION //
 
@@ -465,23 +437,22 @@ h3 {
 .icons {
     background-color: $main-color;
     color: white;
-    height: 300px;
     margin: 0px auto;
     p {
         text-align: center;
         padding-left: 50px;
         padding-right: 50px;
     }
-}
-
-.icon img {
-    margin: 0 auto;
-    max-height: 65px;
-    max-width: 65px;
+  img {
+      margin: 0 auto;
+      max-height: 65px;
+      max-width: 65px;
+    }
 }
 
 .icons {
     padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 #mc_embed_signup {
@@ -517,21 +488,17 @@ h3 {
     padding: 10px 25px;
     background-color: $grey;
     padding-bottom: 40px;
-    max-width: 500px;
+    max-width: 700px;
 }
 
 .table-responsive {
     display: table;
     margin: 0px auto;
-
     border:none;
+    img {
+      width: 100px;
+    }
 }
-
-.table-responsive img {
-    width: 100px;
-}
-
-
 
 .testimonial-container {
     width: 600;
@@ -551,6 +518,9 @@ cite {
     color: white;
 }
 
+.btn-social {
+  width: 64px;
+}
 
 // CHANGES TO MOBILE VIEW //
 
@@ -570,4 +540,7 @@ cite {
     margin-top: 30px;
 }
 
+.container {
+  width: 100%;
+}
 
