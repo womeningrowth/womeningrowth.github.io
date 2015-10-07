@@ -389,17 +389,24 @@ li {
   background-color: #3A87E0;
   box-shadow: none; }
 
-#foli12 label,
+#foli23 label,
 #foli7 label,
 #foli6 label {
   font-family: "Open Sans", sans-serif;
   color: white;
-  font-weight: 300; }
+  font-weight: 300;
+  text-align: left; }
 
 #about .container {
   max-width: 800px;
   text-align: left; }
   #about .container h2 {
     text-align: center; }
+
+label {
+  display: block; }
+
+.buttons {
+  margin-top: 20px; }
 
 /*# sourceMappingURL=site.css.map */

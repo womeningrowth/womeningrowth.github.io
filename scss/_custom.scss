@@ -567,12 +567,13 @@ li {
     box-shadow: none;
 }
 
-#foli12 label,
+#foli23 label,
 #foli7 label,
 #foli6 label {
     font-family: $font-main;
     color: white;
     font-weight: 300;
+    text-align: left;
 }
 
 #about .container {
@@ -581,6 +582,14 @@ li {
     h2 {
         text-align: center;
     }
+}
+
+label {
+    display: block;
+}
+
+.buttons {
+    margin-top: 20px;
 }
 
 // @media only screen and (max-width: 480px) {
