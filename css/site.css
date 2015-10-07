@@ -225,7 +225,7 @@ h5 {
 .logo-box {
   margin-bottom: 350px; }
   .logo-box img {
-    width: 100px;
+    width: 125px;
     margin-bottom: 100px; }
 
 #subscribe {
@@ -359,6 +359,9 @@ cite {
   border-radius: 50%; }
 
 .mobile-subscribe {
+  background-color: white; }
+
+.intro .visible-xs {
   background-color: white; }
 
 .logo-mobile {
