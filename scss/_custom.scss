@@ -172,40 +172,40 @@ h3 {
   width: 130px;
 }
 
-.btn3d:active:focus,
-.btn3d:focus:hover,
-.btn3d:focus {
-    -moz-outline-style:none;
-         outline:medium none;
-}
+// .btn3d:active:focus,
+// .btn3d:focus:hover,
+// .btn3d:focus {
+//     -moz-outline-style:none;
+//          outline:medium none;
+// }
 
-.btn3d:active, .btn3d.active {
-    top:2px;
-}
+// .btn3d:active, .btn3d.active {
+//     top:2px;
+// }
 
 
 
-.btn3d.btn-default {
-    color: #666666;
-    box-shadow:0 0 0 1px #ebebeb inset, 0 0 0 2px rgba(255,255,255,0.10) inset, 0 1px 0 0 #BEBEBE, 0 4px 4px 1px rgba(0,0,0,.2);
-    background-color: lighten($main-color, 60%);
-}
+// .btn3d.btn-default {
+//     color: #666666;
+//     box-shadow:0 0 0 1px #ebebeb inset, 0 0 0 2px rgba(255,255,255,0.10) inset, 0 1px 0 0 #BEBEBE, 0 4px 4px 1px rgba(0,0,0,.2);
+//     background-color: lighten($main-color, 60%);
+// }
 
-.btn3d.btn-default:active, .btn3d.btn-default.active {
-    color: #666666;
-    box-shadow:0 0 0 1px #ebebeb inset, 0 0 0 1px rgba(255,255,255,0.15) inset, 0 1px 3px 1px rgba(0,0,0,.1);
-    background-color:lighten($main-color, 60%);
-}
+// .btn3d.btn-default:active, .btn3d.btn-default.active {
+//     color: #666666;
+//     box-shadow:0 0 0 1px #ebebeb inset, 0 0 0 1px rgba(255,255,255,0.15) inset, 0 1px 3px 1px rgba(0,0,0,.1);
+//     background-color:lighten($main-color, 60%);
+// }
 
-.btn3d.btn-primary {
-    box-shadow:0 0 0 0px #ebebeb inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 1px 0 0 #BEBEBE, 0 2px 2px 1px rgba(0,0,0,0.5);
-    background-color: $button-color-contrast
-}
+// .btn3d.btn-primary {
+//     box-shadow:0 0 0 0px #ebebeb inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 1px 0 0 #BEBEBE, 0 2px 2px 1px rgba(0,0,0,0.5);
+//     background-color: $button-color-contrast
+// }
 
-.btn3d.btn-primary:active, .btn3d.btn-primary.active {
-    box-shadow:0 0 0 0px #ebebeb inset, 0 0 0 1px rgba(255,255,255,0.15) inset, 0 1px 3px 1px rgba(0,0,0,0.3);
-    background-color: $button-color-contrast;
-}
+// .btn3d.btn-primary:active, .btn3d.btn-primary.active {
+//     box-shadow:0 0 0 0px #ebebeb inset, 0 0 0 1px rgba(255,255,255,0.15) inset, 0 1px 3px 1px rgba(0,0,0,0.3);
+//     background-color: $button-color-contrast;
+// }
 
 .navbar-custom {
   margin-bottom: 0;
@@ -348,7 +348,7 @@ h3 {
     padding-left: 40px;
 }
 .logo-box {
-    margin-bottom: 163px;
+    margin-bottom: 350px;
     img {
       width: 100px;
       margin-bottom: 100px;
@@ -519,7 +519,10 @@ cite {
 }
 
 .btn-social {
-    width: 64px;
+    width: 40px;
+    height: 40px;
+    color: #666666;
+    border-radius: 50%;
 }
 
 // CHANGES TO MOBILE VIEW //
@@ -544,6 +547,43 @@ cite {
     width: 100%;
 }
 
-form li.buttons input {
-    background-color: #3A87E0;
+
+.wufoo input.text,
+.wufoo textarea.textarea,
+.wufoo input.file,
+.wufoo select.select{
+    color:#646464;
 }
+
+
+li {
+    list-style: none;
+}
+
+#saveForm {
+    color: white;
+    margin-bottom: 20px;
+    background-color: #3A87E0;
+    box-shadow: none;
+}
+
+#foli12 label,
+#foli7 label,
+#foli6 label {
+    font-family: $font-main;
+    color: white;
+    font-weight: 300;
+}
+
+#about .container {
+    max-width: 800px;
+    text-align: left;
+    h2 {
+        text-align: center;
+    }
+}
+
+// @media only screen and (max-width: 480px) {
+//     html{
+//         background-color:transparent;
+//     }
