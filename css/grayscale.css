@@ -4,18 +4,12 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-@media(min-width:768px) {
-    p {
-/*        margin: 0 0 35px;*/
-        font-size: 20px;
-        line-height: 1.6;
-    }
-}
 
-.intro .intro-body {
-    /*display: table-cell;*/
+
+/*.intro .intro-body {
+    /*display: table-cell;
     vertical-align: middle;
-}
+}*/
 
 @-webkit-keyframes pulse {
     0% {
@@ -51,10 +45,6 @@
     }
 }
 
-@media(min-width:767px) {
-    .content-section {
-/*        padding-top: 200px;*/
-    }
 
 ul.banner-social-buttons {
     margin-top: 0;
@@ -73,7 +63,7 @@ ul.banner-social-buttons {
     }
 
     ul.banner-social-buttons li:last-child {
-        margin-bottom: 0;
+        margin-bottom: 20px;
     }
 }
 

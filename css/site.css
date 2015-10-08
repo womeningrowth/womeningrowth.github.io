@@ -3,7 +3,7 @@ html {
   height: 100%; }
 
 a {
-  color: #1E7B82;
+  color: #417f63;
   -webkit-transition: all .2s ease-in-out;
   -moz-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out; }
@@ -11,7 +11,7 @@ a {
 a:hover,
 a:focus {
   text-decoration: none;
-  color: #1E7B82; }
+  color: #417f63; }
 
 body {
   width: 100%;
@@ -49,7 +49,7 @@ h4 {
   font-weight: 300;
   font-size: 27px;
   line-height: 37px;
-  color: #1E7B82; }
+  color: #417f63; }
 
 h5 {
   color: #F2F2F2;
@@ -62,6 +62,29 @@ h5 {
 
 .fa-bars {
   color: white; }
+
+.btn {
+  border-radius: 0;
+  text-transform: uppercase; }
+
+.btn-subscribe {
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif, sans-serif;
+  font-weight: 700;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out; }
+
+.btn-wig {
+  font-family: "Montserrat", sans-serif;
+  width: 375px; }
+
+.btn-default:hover,
+.btn-default:focus {
+  border: 1px solid #AE5D82;
+  outline: 0;
+  color: #959595;
+  background-color: #ddeee6; }
 
 .btn-circle:hover,
 .btn-circle:focus {
@@ -99,25 +122,11 @@ h5 {
   -webkit-animation-timing-function: linear;
   -moz-animation-timing-function: linear; }
 
-.btn3d {
-  position: relative;
-  top: -6px;
-  border: 0;
-  transition: all 40ms linear;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 2px;
-  margin-right: 2px;
-  border-radius: 0px; }
-
-.btn-join-us {
-  width: 130px; }
-
 .navbar-custom {
   margin-bottom: 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   text-transform: uppercase;
-  background-color: #1E7B82;
+  background-color: #417f63;
   letter-spacing: 1px;
   font-weight: thin; }
 
@@ -158,7 +167,7 @@ h5 {
   outline: 0; }
 
 .navbar-custom .nav li.active a {
-  background-color: #CEEBE8;
+  background-color: #ddeee6;
   opacity: .8;
   color: #333; }
 
@@ -178,7 +187,7 @@ h5 {
   .navbar-custom.top-nav-collapse {
     padding: 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    background: #1E7B82; } }
+    background: #417f63; } }
 .navbar-fixed-top {
   z-index: -1; }
 
@@ -198,16 +207,12 @@ h5 {
   margin: 40px;
   padding: 40px; }
 
-@media (max-width: 480px) {
-  .spotlight {
-    margin: 0px;
-    padding: 0px; } }
 .intro {
-  background-color: #CEEBE8; }
+  background-color: #ddeee6; }
 
 .intro-body {
   position: relative;
-  background: url(../img/header6.jpg) no-repeat top center scroll;
+  background: url(../img/wig-header-green.png) no-repeat top center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -216,17 +221,16 @@ h5 {
   text-align: center;
   color: white;
   margin: 0 auto;
-  height: 100%; }
+  height: 100%;
+  background-position: center; }
 
 .intro-body img {
   float: left;
   padding-left: 40px; }
 
-.logo-box {
-  margin-bottom: 350px; }
-  .logo-box img {
-    width: 125px;
-    margin-bottom: 100px; }
+.logo-box img {
+  width: 125px;
+  margin-bottom: 100px; }
 
 #subscribe {
   width: 400;
@@ -234,12 +238,13 @@ h5 {
   margin: 0px auto; }
 
 .transparent-box {
-  background-color: rgba(30, 123, 130, 0.45); }
+  background-color: rgba(65, 127, 99, 0.7);
+  margin-top: 250px; }
 
 #events {
   width: 100%;
   padding: 50px 0;
-  background-color: #CEEBE8;
+  background-color: #ddeee6;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -268,7 +273,7 @@ h5 {
   width: 50px; }
 
 .team-section {
-  background-color: #CEEBE8;
+  background-color: #ddeee6;
   width: 100%; }
   .team-section p {
     padding-top: 20px; }
@@ -277,7 +282,7 @@ h5 {
 
 #contact {
   padding-top: 0px;
-  background-color: #1E7B82;
+  background-color: #417f63;
   width: 100%;
   padding-top: 30px; }
 
@@ -287,7 +292,7 @@ h5 {
     color: white; }
 
 .icons {
-  background-color: #1E7B82;
+  background-color: #417f63;
   color: white;
   margin: 0px auto; }
   .icons p {
@@ -356,7 +361,11 @@ cite {
   width: 40px;
   height: 40px;
   color: #666666;
-  border-radius: 50%; }
+  border-radius: 50%;
+  background-color: white;
+  line-height: 40px;
+  display: table-cell;
+  padding: 0; }
 
 .mobile-subscribe {
   background-color: white; }
@@ -386,12 +395,6 @@ cite {
 li {
   list-style: none; }
 
-#saveForm {
-  color: white;
-  margin-bottom: 20px;
-  background-color: #3A87E0;
-  box-shadow: none; }
-
 #foli23 label,
 #foli7 label,
 #foli6 label {
@@ -402,14 +405,70 @@ li {
 
 #about .container {
   max-width: 800px;
-  text-align: left; }
-  #about .container h2 {
-    text-align: center; }
+  text-align: left;
+  text-align: center; }
 
 label {
   display: block; }
 
-.buttons {
-  margin-top: 20px; }
+#contact ul {
+  padding: 0px; }
+
+.wig-title {
+  color: #60AD8A;
+  margin-top: 50px; }
+
+@media (max-width: 42.61em) {
+  .btn-wig {
+    width: 275px; }
+
+  .spotlight {
+    padding: 0px 20px 20px 20px;
+    background-color: #F2F2F2; }
+
+  .icons:first-child {
+    padding-top: 30px; }
+
+  .icons:nth-child(3) {
+    padding-bottom: 30px; }
+
+  .icons {
+    padding: 10px 0 10px 0; } }
+/* Really small phones */
+@media screen and (max-width: 320px) {
+  .btn-wig {
+    width: 202px; } }
+/* Regular smart phones, including iPhone 6 + with 414px viewport! */
+@media screen and (min-width: 375px) {
+  #Field6,
+  #Field23 {
+    height: 30px;
+    width: 275px; }
+
+  #Field7 {
+    height: 70px;
+    width: 275px; } }
+/* Regular Tablets from 480 to 800px including Galaxy tablets - 768px is only good for iPad */
+@media screen and (min-width: 767px) {
+  #Field6,
+  #Field23 {
+    height: 40px;
+    width: 400px; }
+
+  #Field7 {
+    height: 92px;
+    width: 400px;
+    margin-bottom: 20px; } }
+/* Desktops and Laptops */
+@media screen and (min-width: 991px) {
+  #Field6,
+  #Field23 {
+    height: 40px;
+    width: 320px; }
+
+  #Field7 {
+    height: 92px;
+    width: 673px;
+    margin-bottom: 20px; } }
 
 /*# sourceMappingURL=site.css.map */

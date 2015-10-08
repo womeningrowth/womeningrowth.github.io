@@ -1,0 +1,74 @@
+@import "breakpoints";
+@import "variables";
+
+
+
+
+@media(max-width:$tablet) {
+    .btn-wig {
+        width: 275px;
+    }
+    .spotlight {
+        padding: 0px 20px 20px 20px;
+        background-color: $grey;
+    }
+    .icons:first-child {
+        padding-top: 30px;
+    }
+    .icons:nth-child(3) {
+        padding-bottom: 30px;
+    }
+    .icons {
+        padding: 10px 0 10px 0;
+    }
+
+}
+/* Really small phones */
+@media screen and (max-width:320px) {
+    .btn-wig {
+        width: 202px;
+    }
+}
+
+/* Regular smart phones, including iPhone 6 + with 414px viewport! */
+@media screen and (min-width: 375px) {
+        #Field6,
+    #Field23 {
+        height: 30px;
+        width: 275px;
+    }
+    #Field7 {
+        height: 70px;
+        width: 275px;
+}
+}
+
+/* Regular Tablets from 480 to 800px including Galaxy tablets - 768px is only good for iPad */
+@media screen and (min-width: 767px) {
+        #Field6,
+    #Field23 {
+        height: 40px;
+        width: 400px;
+    }
+
+    #Field7 {
+        height: 92px;
+        width: 400px;
+        margin-bottom: 20px;
+    }
+}
+
+/* Desktops and Laptops */
+@media screen and (min-width: 991px) {
+    #Field6,
+#Field23 {
+    height: 40px;
+    width: 320px;
+}
+
+#Field7 {
+    height: 92px;
+    width: 673px;
+    margin-bottom: 20px;
+}
+}
