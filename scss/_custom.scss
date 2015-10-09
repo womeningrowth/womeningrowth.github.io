@@ -304,7 +304,7 @@ h3 {
 }
 
 .transparent-box {
-    background-color: rgba(65, 127, 99, .70);
+    background-color: rgba(75, 149, 116, 0.78);
     margin-top: 250px;
 }
 
@@ -538,8 +538,10 @@ label {
     padding: 0px;
 }
 
-.wig-title {
-    color: #60AD8A;
-    margin-top: 50px;
-}
+// .wig-title {
+//     color: darken($logo-color, 20%);
+//     margin-top: 50px;
+//     float: left;
+//     text-align: center;
+// }
 

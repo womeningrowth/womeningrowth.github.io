@@ -238,7 +238,7 @@ h5 {
   margin: 0px auto; }
 
 .transparent-box {
-  background-color: rgba(65, 127, 99, 0.7);
+  background-color: rgba(75, 149, 116, 0.78);
   margin-top: 250px; }
 
 #events {
@@ -413,10 +413,6 @@ label {
 
 #contact ul {
   padding: 0px; }
-
-.wig-title {
-  color: #60AD8A;
-  margin-top: 50px; }
 
 @media (max-width: 42.61em) {
   .btn-wig {
