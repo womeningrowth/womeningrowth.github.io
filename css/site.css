@@ -3,7 +3,7 @@ html {
   height: 100%; }
 
 a {
-  color: #417f63;
+  color: #1e7b82;
   -webkit-transition: all .2s ease-in-out;
   -moz-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out; }
@@ -11,7 +11,7 @@ a {
 a:hover,
 a:focus {
   text-decoration: none;
-  color: #417f63; }
+  color: #1e7b82; }
 
 body {
   width: 100%;
@@ -49,7 +49,7 @@ h4 {
   font-weight: 300;
   font-size: 27px;
   line-height: 37px;
-  color: #417f63; }
+  color: #1e7b82; }
 
 h5 {
   color: #F2F2F2;
@@ -79,12 +79,17 @@ h5 {
   font-family: "Montserrat", sans-serif;
   width: 375px; }
 
+.btn-primary {
+  border-radius: 5px;
+  color: white;
+  background-color: #cf3b31; }
+
 .btn-default:hover,
 .btn-default:focus {
-  border: 1px solid #AE5D82;
+  border: 1px solid #cf3b31;
   outline: 0;
   color: #959595;
-  background-color: #ddeee6; }
+  background-color: #ceebe8; }
 
 .btn-circle:hover,
 .btn-circle:focus {
@@ -126,7 +131,7 @@ h5 {
   margin-bottom: 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   text-transform: uppercase;
-  background-color: #417f63;
+  background-color: #1e7b82;
   letter-spacing: 1px;
   font-weight: thin; }
 
@@ -167,7 +172,7 @@ h5 {
   outline: 0; }
 
 .navbar-custom .nav li.active a {
-  background-color: #ddeee6;
+  background-color: #ceebe8;
   opacity: .8;
   color: #333; }
 
@@ -187,7 +192,7 @@ h5 {
   .navbar-custom.top-nav-collapse {
     padding: 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    background: #417f63; } }
+    background: #1e7b82; } }
 .navbar-fixed-top {
   z-index: -1; }
 
@@ -208,11 +213,11 @@ h5 {
   padding: 40px; }
 
 .intro {
-  background-color: #ddeee6; }
+  background-color: #ceebe8; }
 
 .intro-body {
   position: relative;
-  background: url(../img/wig-header-green.png) no-repeat top center scroll;
+  background: url(../img/IMG_1623-2.jpg) no-repeat top center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -238,13 +243,13 @@ h5 {
   margin: 0px auto; }
 
 .transparent-box {
-  background-color: rgba(75, 149, 116, 0.78);
+  background-color: rgba(30, 122, 128, 0.8);
   margin-top: 250px; }
 
 #events {
   width: 100%;
   padding: 50px 0;
-  background-color: #ddeee6;
+  background-color: #ceebe8;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -273,7 +278,7 @@ h5 {
   width: 50px; }
 
 .team-section {
-  background-color: #ddeee6;
+  background-color: #ceebe8;
   width: 100%; }
   .team-section p {
     padding-top: 20px; }
@@ -282,7 +287,7 @@ h5 {
 
 #contact {
   padding-top: 0px;
-  background-color: #417f63;
+  background-color: #1e7b82;
   width: 100%;
   padding-top: 30px; }
 
@@ -292,7 +297,7 @@ h5 {
     color: white; }
 
 .icons {
-  background-color: #417f63;
+  background-color: #1e7b82;
   color: white;
   margin: 0px auto; }
   .icons p {
@@ -413,6 +418,12 @@ label {
 
 #contact ul {
   padding: 0px; }
+
+#foli2 {
+  padding-bottom: 20px; }
+
+.transparent-box p {
+  padding-top: 20px; }
 
 @media (max-width: 42.61em) {
   .btn-wig {

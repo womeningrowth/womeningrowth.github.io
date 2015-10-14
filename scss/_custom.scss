@@ -101,11 +101,13 @@ h3 {
     width: 375px;
 }
 
-// .btn-default {
-//     border: 1px solid $grey;
-//     color: white;
-//     background-color: $button-color-contrast;
-// }
+
+
+.btn-primary {
+    border-radius: 5px;
+    color: white;
+    background-color: $button-color-contrast;
+}
 
 .btn-default:hover,
 .btn-default:focus {
@@ -274,7 +276,7 @@ h3 {
 
 .intro-body {
     position: relative;
-    background: url(../img/wig-header-green.png) no-repeat top center scroll;
+    background: url(../img/IMG_1623-2.jpg) no-repeat top center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -304,7 +306,7 @@ h3 {
 }
 
 .transparent-box {
-    background-color: rgba(75, 149, 116, 0.78);
+    background-color: rgba(30, 122, 128, 0.80);
     margin-top: 250px;
 }
 
@@ -544,4 +546,13 @@ label {
 //     float: left;
 //     text-align: center;
 // }
+
+#foli2 {
+    padding-bottom: 20px;
+}
+
+.transparent-box p {
+    padding-top: 20px;
+}
+
 
