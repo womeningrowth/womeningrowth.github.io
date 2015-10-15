@@ -43,6 +43,7 @@ h1 {
     line-height: 1.2em;
     font-size:  75px;
     font-weight: bold;
+letter-spacing: 6.5px;
 }
 
 h2 {
@@ -50,6 +51,8 @@ h2 {
     font-weight: thin;
     font-size: 24px;
     line-height: 45px;
+    letter-spacing: 2px;
+    color: #2a2a2a
 }
 
 h3 {
@@ -107,6 +110,7 @@ h3 {
     border-radius: 5px;
     color: white;
     background-color: $button-color-contrast;
+    border-color: grey;
 }
 
 .btn-default:hover,
@@ -330,6 +334,9 @@ h3 {
 
  // SPEAKER SECTION //
 
+#speakers {
+    background-color: white;
+}
 
 .speaker {
     text-align: center;
@@ -340,12 +347,9 @@ h3 {
 .icons img,
 .speaker img {
     margin: 0 auto;
-    height: 150px;
-    width: 150px;
-    @media only screen and (max-width: 480px) {
-
-    }
-
+    height: 200px;
+    width: 200px;
+    margin-bottom: 20px;
 }
 
 .speaker-logo.speaker-logo {
@@ -355,18 +359,28 @@ h3 {
 }
 
 
- // CONTACT SECTION //
-
-.team-section {
+#meet-the-team {
     background-color: $lt-main;
-    width: 100%;
-    p {
-        padding-top: 20px;
-    }
     img {
-        margin: 0 auto;
+        height: 100px;
+        width: 100px;
     }
 }
+
+
+
+// CONTACT SECTION //
+
+// .team-section {
+//     background-color: $lt-main;
+//     width: 100%;
+//     p {
+//         padding-top: 20px;
+//     }
+//     img {
+//         margin: 0 auto;
+//     }
+// }
 
 #contact {
     padding-top: 0px;

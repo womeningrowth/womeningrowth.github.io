@@ -31,13 +31,16 @@ h1 {
   font-family: "Montserrat", sans-serif;
   line-height: 1.2em;
   font-size: 75px;
-  font-weight: bold; }
+  font-weight: bold;
+  letter-spacing: 6.5px; }
 
 h2 {
   font-family: "Open Sans", sans-serif;
   font-weight: thin;
   font-size: 24px;
-  line-height: 45px; }
+  line-height: 45px;
+  letter-spacing: 2px;
+  color: #2a2a2a; }
 
 h3 {
   font-family: "Montserrat", sans-serif;
@@ -82,7 +85,8 @@ h5 {
 .btn-primary {
   border-radius: 5px;
   color: white;
-  background-color: #cf3b31; }
+  background-color: #cf3b31;
+  border-color: grey; }
 
 .btn-default:hover,
 .btn-default:focus {
@@ -261,6 +265,9 @@ h5 {
   left: 50%;
   margin-left: -60px / 2; }
 
+#speakers {
+  background-color: white; }
+
 .speaker {
   text-align: center;
   padding-top: 30px;
@@ -269,21 +276,20 @@ h5 {
 .icons img,
 .speaker img {
   margin: 0 auto;
-  height: 150px;
-  width: 150px; }
+  height: 200px;
+  width: 200px;
+  margin-bottom: 20px; }
 
 .speaker-logo.speaker-logo {
   margin: 0 auto;
   height: 50px;
   width: 50px; }
 
-.team-section {
-  background-color: #ceebe8;
-  width: 100%; }
-  .team-section p {
-    padding-top: 20px; }
-  .team-section img {
-    margin: 0 auto; }
+#meet-the-team {
+  background-color: #ceebe8; }
+  #meet-the-team img {
+    height: 100px;
+    width: 100px; }
 
 #contact {
   padding-top: 0px;
