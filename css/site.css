@@ -465,7 +465,10 @@ label {
 /* Really small phones */
 @media screen and (max-width: 320px) {
   .btn-wig {
-    width: 202px; } }
+    width: 202px; }
+
+  .btn-subscribe {
+    margin-top: 10px; } }
 /* Regular smart phones, including iPhone 6 + with 414px viewport! */
 @media screen and (min-width: 375px) {
   #Field6,
