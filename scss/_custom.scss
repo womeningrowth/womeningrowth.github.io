@@ -102,6 +102,7 @@ h3 {
 .btn-wig {
     font-family: $font-titles;
     width: 375px;
+    margin-top: 20px;
 }
 
 
@@ -267,12 +268,12 @@ h3 {
  // ABOUT SECTION //
 
 .about-section {
-    background-color: white;
+    background-color: $grey;
     width: 100%;
 }
 
 .spotlight {
-    background-color: white;
+    background-color: $grey;
     margin: 40px;
     padding: 40px;
 }

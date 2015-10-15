@@ -80,7 +80,8 @@ h5 {
 
 .btn-wig {
   font-family: "Montserrat", sans-serif;
-  width: 375px; }
+  width: 375px;
+  margin-top: 20px; }
 
 .btn-primary {
   border-radius: 5px;
@@ -212,11 +213,11 @@ h5 {
   .navbar-fixed-top {
     z-index: 1; } }
 .about-section {
-  background-color: white;
+  background-color: #F2F2F2;
   width: 100%; }
 
 .spotlight {
-  background-color: white;
+  background-color: #F2F2F2;
   margin: 40px;
   padding: 40px; }
 
@@ -447,7 +448,7 @@ label {
 
 @media (max-width: 42.61em) {
   .btn-wig {
-    width: 275px; }
+    width: 200px; }
 
   .spotlight {
     padding: 0px 20px 20px 20px;
