@@ -113,6 +113,11 @@ h3 {
     border-color: grey;
 }
 
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: darken($button-color-contrast, 5%);
+}
+
 .btn-default:hover,
 .btn-default:focus {
     border: 1px solid $button-color-contrast;
@@ -262,7 +267,7 @@ h3 {
  // ABOUT SECTION //
 
 .about-section {
-    background-color: $grey;
+    background-color: white;
     width: 100%;
 }
 
@@ -569,4 +574,17 @@ label {
     padding-top: 20px;
 }
 
+#events p {
+    font-weight: thin;
+    font-size: 24px;
+}
 
+#learn-connect-grow {
+    h3 {
+        font-family: $font-lato;
+    }
+    p {
+        font-weight: 300;
+        font-style: italic;
+    }
+}

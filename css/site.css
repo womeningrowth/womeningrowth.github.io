@@ -88,6 +88,10 @@ h5 {
   background-color: #cf3b31;
   border-color: grey; }
 
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #bb352c; }
+
 .btn-default:hover,
 .btn-default:focus {
   border: 1px solid #cf3b31;
@@ -208,7 +212,7 @@ h5 {
   .navbar-fixed-top {
     z-index: 1; } }
 .about-section {
-  background-color: #F2F2F2;
+  background-color: white;
   width: 100%; }
 
 .spotlight {
@@ -430,6 +434,16 @@ label {
 
 .transparent-box p {
   padding-top: 20px; }
+
+#events p {
+  font-weight: thin;
+  font-size: 24px; }
+
+#learn-connect-grow h3 {
+  font-family: "Lato", sans-serif; }
+#learn-connect-grow p {
+  font-weight: 300;
+  font-style: italic; }
 
 @media (max-width: 42.61em) {
   .btn-wig {
