@@ -55,8 +55,9 @@ h4 {
   color: #1e7b82; }
 
 h5 {
-  color: #F2F2F2;
-  font-size: 8px; }
+  font-weight: 300;
+  font-size: 16px;
+  line-height: .23em; }
 
 .img {
   display: table-cell;
@@ -226,7 +227,7 @@ h5 {
 
 .intro-body {
   position: relative;
-  background: url(../img/IMG_1623-2.jpg) no-repeat top center scroll;
+  background: url(../img/WomenInGrowthPanel.jpg) no-repeat top center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -277,6 +278,9 @@ h5 {
   text-align: center;
   padding-top: 30px;
   margin-bottom: 30px; }
+  .speaker p {
+    text-transform: uppercase;
+    font-size: 20px; }
 
 .icons img,
 .speaker img {
@@ -431,7 +435,10 @@ label {
   padding: 0px; }
 
 #foli2 {
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-left: 36px; }
 
 .transparent-box p {
   padding-top: 20px; }
@@ -445,6 +452,10 @@ label {
 #learn-connect-grow p {
   font-weight: 300;
   font-style: italic; }
+
+#contact p {
+  color: #F2F2F2;
+  font-size: 8px; }
 
 @media (max-width: 42.61em) {
   .btn-wig {
