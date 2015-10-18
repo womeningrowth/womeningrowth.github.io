@@ -447,9 +447,6 @@ label {
   font-weight: bold;
   text-transform: uppercase; }
 
-.transparent-box p {
-  padding-top: 20px; }
-
 #events p {
   font-weight: thin;
   font-size: 24px; }
@@ -463,6 +460,9 @@ label {
 #contact p {
   color: #F2F2F2;
   font-size: 8px; }
+
+.go-down {
+  margin-bottom: 20px; }
 
 @media (max-width: 42.61em) {
   .btn-wig {
