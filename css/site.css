@@ -77,7 +77,8 @@ h5 {
   font-weight: 700;
   -webkit-transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out; }
+  transition: all .3s ease-in-out;
+  min-width: 145px; }
 
 .btn-wig {
   font-family: "Montserrat", sans-serif;
@@ -236,7 +237,8 @@ h5 {
   color: white;
   margin: 0 auto;
   height: 100%;
-  background-position: center; }
+  background-position: center;
+  background-attachment: fixed; }
 
 .intro-body img {
   float: left;
@@ -400,6 +402,18 @@ cite {
 .intro .visible-xs {
   background-color: white; }
 
+.intro .visible-xs p {
+  max-width: 286px;
+  margin: 0 auto;
+  margin-bottom: 20px; }
+
+.intro .visible-xs ul {
+  padding-left: 0; }
+
+.mobile-email {
+  width: 275px; }
+
+.intro .visible-xs
 .logo-mobile {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -439,7 +453,7 @@ li {
 label {
   display: block; }
 
-#contact ul {
+ul {
   padding: 0px; }
 
 #foli2 {
@@ -464,7 +478,18 @@ label {
 .go-down {
   margin-bottom: 20px; }
 
-@media (max-width: 42.61em) {
+#Field2 {
+  min-width: 275px; }
+
+/* Really small phones */
+@media screen and (max-width: 320px) {
+  .btn-wig {
+    width: 202px; }
+
+  .btn-subscribe.btn-mobile {
+    width: 275px;
+    margin-top: 10px; } }
+@media (max-width: 768px) {
   .btn-wig {
     width: 200px; }
 
@@ -480,15 +505,8 @@ label {
 
   .icons {
     padding: 10px 0 10px 0; } }
-/* Really small phones */
-@media screen and (max-width: 320px) {
-  .btn-wig {
-    width: 202px; }
-
-  .btn-subscribe {
-    margin-top: 10px; } }
 /* Regular smart phones, including iPhone 6 + with 414px viewport! */
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 480px) {
   #Field6,
   #Field23 {
     height: 30px;
@@ -497,8 +515,12 @@ label {
   #Field7 {
     height: 70px;
     width: 275px; } }
+@media screen and (max-width: 480px) {
+  .btn-subscribe.btn-mobile {
+    width: 275px;
+    margin-top: 10px; } }
 /* Regular Tablets from 480 to 800px including Galaxy tablets - 768px is only good for iPad */
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   #Field6,
   #Field23 {
     height: 40px;
@@ -509,7 +531,7 @@ label {
     width: 400px;
     margin-bottom: 20px; } }
 /* Desktops and Laptops */
-@media screen and (min-width: 991px) {
+@media screen and (min-width: 1200px) {
   #Field6,
   #Field23 {
     height: 40px;

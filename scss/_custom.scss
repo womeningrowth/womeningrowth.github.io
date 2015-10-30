@@ -97,6 +97,7 @@ h3 {
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
+    min-width: 145px;
 
 }
 
@@ -113,6 +114,7 @@ h3 {
     color: white;
     background-color: $button-color-contrast;
     border-color: grey;
+
 }
 
 .btn-primary:hover,
@@ -297,7 +299,7 @@ h3 {
     margin: 0 auto;
     height: 100%;
     background-position: center;
-    // background-size: 100%;\
+    background-attachment: fixed;
 }
 
 .intro-body img {
@@ -523,6 +525,25 @@ cite {
 .intro .visible-xs {
     background-color: white;
 }
+
+.intro .visible-xs p {
+    max-width: 286px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    }
+
+.intro .visible-xs ul {
+    padding-left: 0;
+}
+
+
+
+.mobile-email {
+    width: 275px;
+}
+
+.intro .visible-xs
+
 .logo-mobile {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -573,7 +594,7 @@ label {
 }
 
 
-#contact ul {
+ul {
     padding: 0px;
 }
 
@@ -613,4 +634,8 @@ label {
 
 .go-down {
     margin-bottom: 20px;
+}
+
+#Field2 {
+    min-width: 275px;
 }

@@ -2,6 +2,16 @@
 @import "variables";
 
 
+/* Really small phones */
+@media screen and (max-width:$sm-mobile) {
+    .btn-wig {
+        width: 202px;
+    }
+    .btn-subscribe.btn-mobile {
+    width: 275px;
+    margin-top: 10px;
+}
+}
 
 
 @media(max-width:$tablet) {
@@ -22,20 +32,12 @@
         padding: 10px 0 10px 0;
     }
 
-}
-/* Really small phones */
-@media screen and (max-width:320px) {
-    .btn-wig {
-        width: 202px;
-    }
-    .btn-subscribe {
-    margin-top: 10px;
-}
+
 }
 
 /* Regular smart phones, including iPhone 6 + with 414px viewport! */
-@media screen and (min-width: 375px) {
-        #Field6,
+@media screen and (min-width:$mobile) {
+    #Field6,
     #Field23 {
         height: 30px;
         width: 275px;
@@ -46,8 +48,15 @@
 }
 }
 
+@media screen and (max-width: $mobile) {
+    .btn-subscribe.btn-mobile {
+        width: 275px;
+        margin-top: 10px;
+    }
+}
+
 /* Regular Tablets from 480 to 800px including Galaxy tablets - 768px is only good for iPad */
-@media screen and (min-width: 767px) {
+@media screen and (min-width:$tablet) {
         #Field6,
     #Field23 {
         height: 40px;
@@ -63,16 +72,16 @@
 }
 
 /* Desktops and Laptops */
-@media screen and (min-width: 991px) {
+@media screen and (min-width:$desktop) {
     #Field6,
-#Field23 {
+    #Field23 {
     height: 40px;
     width: 320px;
-}
+    }
 
-#Field7 {
-    height: 92px;
-    width: 673px;
-    margin-bottom: 20px;
-}
-}
+    #Field7 {
+        height: 92px;
+        width: 673px;
+        margin-bottom: 20px;
+        }
+    }
